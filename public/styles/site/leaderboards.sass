@@ -5,10 +5,8 @@
 .leaderboardBackground
   padding: 7.5vw 12vw
 
-  
-
 // This is the searchbar input form
-input 
+input
   margin: 1em 1em 2px 1em
   background-color: variables.$background-tertiary
   color: variables.$color-active
@@ -18,7 +16,6 @@ input
   z-index: 2
   position: relative
 
-  
   // This class determines whether the first second and third player will have a different background color
 .leaderboardAwards
   .newLeaderboardContainer:nth-child(odd)
@@ -31,14 +28,12 @@ input
     background-color: #737373
   .newLeaderboardContainer:nth-child(4)
     background-color: #5d351d
-    
+
 .leaderboardNoAwards
   .newLeaderboardContainer:nth-child(odd)
     background-color: mix(variables.$background-tertiary, variables.$background-primary, 25%)
   .newLeaderboardContainer:nth-child(even)
     background-color: variables.$background-secondary
-  
-
 
 .newLeaderboard
   @include mixins.gridMainContainer
@@ -50,29 +45,25 @@ input
       font-size: 1.2rem
       padding: 0
     .categoryFilter
-    
+
       h2
         padding: 0
-    
         //transition: 0.4s
         //cursor: pointer
         //&:hover
           transform: scale(1.1)
-        
-  
+
+
       img
         display: inline-block
         padding: 0 0.1em
         height: 0.8em
   .newLeaderboardContainer
     @include mixins.gridMainContainer
-    
+
     h3
       font-size: 0.9rem
       padding: 0.75em 0
-
-
-  
 
 .mainLeaderboardContainer
   @include mixins.gridMainContainer
@@ -101,7 +92,7 @@ input
     color: variables.$color-active
     background-color: variables.$background-secondary
 
-    
+
 //Buttons across the leaderboards
 .leaderboardCategory
   border-radius: 20px
@@ -114,7 +105,7 @@ input
   .categoryButton:nth-child(odd)
     border-radius: 30px 0 0 30px
     border-right: 0.1em solid white
-    
+
   .categoryButton:nth-child(even)
     border-radius: 0 30px 30px 0
   .categoryContainer
@@ -134,8 +125,8 @@ input
       color: variables.$color-inactive-plus
       pointer-events: none
       cursor: default
-    
-  
+
+
 
 
 .appearWhenSearching
@@ -154,7 +145,7 @@ input
     text-align: left
     li
       padding: 0.5em 1em
-      
+
 .clearButton
   img
     cursor: pointer
@@ -186,12 +177,12 @@ input
     ul
       font-size: 12px
       padding: 1em 0 0 0
-      
+
       li
         text-overflow: ellipsis
         font-size: 12px
         padding: 1em 0
-  
+
   .clearButton
     left: 90%
     top: 68%
@@ -203,7 +194,6 @@ input
     ul
       li
         padding: 0.65em
-    
 
 @media (max-width: 1600px)
   .leaderboardContainer

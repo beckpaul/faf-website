@@ -2,13 +2,13 @@
 @use '../abstracts/mixins'
 
 \:root
- 
+
 
   /* Font sizes
   --paragraph-font-size: 0.9vw
   --subtitle-font-size: 1.4vw
   --title-font-size: 1.8vw
-  
+
 @media (max-width: 1400px)
   \:root
     --paragraph-font-size: 1.4vw
@@ -32,22 +32,22 @@
 //scroll Bar
 
 /* width */
-::-webkit-scrollbar 
+::-webkit-scrollbar
   width: 8px
   height: 0
 /* Track */
-::-webkit-scrollbar-track 
+::-webkit-scrollbar-track
   background: variables.$background-primary
 /* Handle */
 ::-webkit-scrollbar-thumb
   background: variables.$color-inactive-plus
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover
-  background: variables.$color-inactive 
+  background: variables.$color-inactive
 
 
 // Global values
-  
+
 html
   font-family: variables.$family-paragraph
 
@@ -71,13 +71,13 @@ h1
   font-size: var(--title-font-size)
   padding: 1.4em 0.8em
   font-weight: normal
-  
+
 h2
   font-family: variables.$family-subtitle
   font-size: var(--subtitle-font-size)
   padding: 1em 0.8em
   font-weight: 500
-  
+
 h3 , h4, h5, h6
   font-size: var(--paragraph-font-size)
   padding: 1em 0.8em
@@ -89,7 +89,7 @@ a
   &:link
     text-decoration: none
     color: variables.$color-inactive
-    
+
 
   &:visited
     text-decoration: none
@@ -103,7 +103,7 @@ ul
   margin: 0
 
 
-  
+
 .indexButton
   margin: 10vw
   font-size: 4vw
@@ -140,9 +140,9 @@ ul
   bottom: 0
   left: 0
   z-index: 1
-  
-  
-@keyframes gradientBar1 
+
+
+@keyframes gradientBar1
   0%
     background-position: left
   50%
@@ -152,7 +152,7 @@ ul
     opacity: 0
   100%
     opacity: 0
-    
+
 .movingBackground2
   background: linear-gradient(to right, #ffa300, #8e0800, #ffa300)
   background-size: 200%
@@ -175,7 +175,7 @@ ul
     opacity: 1
   100%
     background-position: right
-    
+
 
 /*=============== Nav Bar ===============
 /*===== Top Navbar =====
@@ -195,15 +195,12 @@ ul
 .topNavContainer
   padding: 0.25em 0.75em
   a
-    
-    
     img
       transition: 0.4s
       height: 1.25em
-      
+
       &:hover
         filter: brightness(2)
-  
 
 .topNavItem
   position: relative
@@ -214,7 +211,7 @@ ul
   justify-self: end
   &:hover
     color: variables.$color-active
-    
+
 .fab
   width: 100%
   text-align: center
@@ -225,13 +222,12 @@ ul
   font-size: var(--paragraph-font-size)
   &:hover
     color: variables.$color-active
-    
+
 .fa-language
   color: variables.$color-active
   font-size: calc(var(--paragraph-font-size) *1.5)
   padding: 0
-  
-  
+
 .topNavAbsolute
   position: absolute
   z-index: 10
@@ -252,9 +248,9 @@ ul
 
       &:hover
         color: variables.$color-active
-        
+
         background-color: variables.$color-inactive-plus
-  
+
 .topNavList
   &:hover
     color: variables.$color-active
@@ -263,8 +259,8 @@ ul
 
   li
     color: variables.$color-inactive
-    
-    
+
+
 /*===== Regular navbar =====
 
 .mainNavContainer
@@ -293,9 +289,9 @@ ul
 
 
 
-.navLogo 
+.navLogo
   img
-    
+
     width: 100px
     height: 100%
     padding: 0 20px
@@ -386,7 +382,7 @@ ul
       height: 100%
 .fa-caret-down
   transition: 0.5s
-  
+
 // Here to make the body non scrollable while the mobile nav bar is active
 .stopScroll
   overflow: hidden
@@ -410,7 +406,7 @@ ul
   //font-size: calc(var(--title-font-size) * 1.1)
   color: variables.$color-active
   transition: 0.5s
-  
+
   .gridItem
     align-items: start
     a
@@ -470,13 +466,13 @@ ul
     left: 25px
     width: 30px
     transform: rotate(90deg)
-  //@media (max-width: 500px) 
-    .main-card 
+  //@media (max-width: 500px)
+    .main-card
       max-width: 90vw
       margin: 5rem auto
       padding: 1em
-    
-    input, a, h2 
+
+    input, a, h2
       font-size: 40px
 
 
@@ -488,14 +484,14 @@ ul
 .mobileCaretActive
   transform: rotate(-0.25turn)
   transition: 0.5s
-  
-
-
-  
 
 
 
-      
+
+
+
+
+
 .mobileOtherLinks
   a
     padding: 0 1em
@@ -513,7 +509,7 @@ ul
   justify-content: center
   text-align: center
 
-      
+
 .footerItem
   transition: 0.4s
   line-height: 2.2em
@@ -530,7 +526,7 @@ ul
     color: variables.$color-active
     padding: 1em
     display: inline-block
-    
+
   li
     list-style-type: none
     padding: 1em 0.5em 0 0.5em
@@ -541,7 +537,7 @@ ul
     &:hover
       color: variables.$color-active
       transition: 0.4s
-      
+
 .navContainer
   .loginItem
     position: relative
@@ -566,17 +562,17 @@ ul
       left: 50%
       -webkit-transform: translateX(-50%)
       transform: translateX(-50%)
-      
+
       opacity: 1
       .loginDropdown
         padding: 0
-        
+
         display: block
         opacity: 1
         li
           padding: 1em
           font-size: 1rem
-          
+
           background-color: variables.$background-secondary
           transition: 0.4s
         a
@@ -588,13 +584,13 @@ ul
 @media (min-width: 1201px)
   .mobileTransition
     display: none
-    
+
 @media (max-width: 1200px)
   .mainNavContainer, .mainTopNavContainer
     display: none
   .mobileTransition
     display: grid
-    
+
 @media (max-width: 800px)
   .mainTopNavContainer
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))

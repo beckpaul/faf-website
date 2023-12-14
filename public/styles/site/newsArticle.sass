@@ -21,16 +21,14 @@
   background-size: cover
   padding: 5vw 10vw
 
-  
-  
 #newsMain
   @include mixins.gridMainContainer
-  background-color: rgba(0,0,0,.7) 
+  background-color: rgba(0,0,0,.7)
   opacity: 1
   border-radius: 20px
   line-height: 2em
   text-align: left
-  
+
   .newsContainer
     padding: 1em
     display: inline-block
@@ -41,7 +39,7 @@
       &:hover
         color: variables.$button-active
         text-decoration: underline variables.$button-active
-        
+
     h2
       padding: 1.5em 0.8em
     h3,h4,h5
@@ -49,7 +47,7 @@
       font-size: calc(var(--paragraph-font-size)*1.2)
       padding: 1em 0.8em
       margin: 0
-    
+
     img
       width: 70%
       height: 70%
@@ -57,7 +55,7 @@
     figcaption
       font-family: variables.$family-paragraph
       font-size: var(--paragraph-font-size)
-      
+
     li
       list-style: none
       font-size: var(--paragraph-font-size)
@@ -69,9 +67,7 @@
       font-family: variables.$family-paragraph
       padding: 1em 2em
       line-height: 1.5em
-      
 
-  
 @media (max-width: 1200px)
   #newsBackground
     padding: 2vw 4vw

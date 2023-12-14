@@ -11,11 +11,10 @@
 
 .teamMain
   @include mixins.gridMainContainer
-
   gap: 20px 20px
   text-align: left
   margin: 30px 50px
-  
+
   .teamSelection
     cursor: pointer
     padding: 2em
@@ -29,7 +28,7 @@
       width: 50%
     &:hover
       background-color: variables.$button-inactive
-      color: variables.$background-primary  
+      color: variables.$background-primary
   .teamContainer
     border: 1em solid variables.$background-secondary
 
@@ -55,7 +54,6 @@
       width: 80%
       margin-left: auto
       margin-right: auto
-  
 
 @media (max-width: 1000px)
   .teamMain
@@ -68,7 +66,6 @@
         padding: 0.25em
       .column6, .column4
         grid-column: span 12
-
 
 @media (max-width: 700px)
   .teamMain
