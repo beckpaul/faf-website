@@ -1,7 +1,9 @@
 extends ../../layouts/default
+include ../../mixins/flash-messages
 
 block content
     h1 Clans
+    +flash-messages(messages)
     table#clan-table
 block js
     script(src=webpackAssetJS('clans'))
