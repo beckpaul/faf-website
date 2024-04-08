@@ -138,11 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // function to make highligthed text change colors/pulsate (it goes from white to gold and viceversa)
     const highlightText = document.querySelectorAll('.highlightText')
-    let highLigthCounter = 0
+    let highlightCounter = 0
 
     function highlightPulse() {
-        if (highLigthCounter < 1) {
-            highLigthCounter++
+        if (highlightCounter < 1) {
+            highlightCounter++
             highlightText.forEach((element) => {
                 element.style.transition = '1s'
             })
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 element.style.color = '#FFFFFF'
             })
         } else {
-            highLigthCounter--
+            highlightCounter--
             highlightText.forEach((element) => {
                 element.style.color = '#f7941d'
             })
