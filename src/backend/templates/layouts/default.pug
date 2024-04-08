@@ -298,7 +298,8 @@ html(lang='en')
                 crossorigin='anonymous'
             )
             script(type='text/javascript').
-                if (typeof Snowflakes !== 'undefined') {
+                const currentMonth = new Date().getMonth() + 1
+                if (typeof Snowflakes !== 'undefined' && (currentMonth <= 2 || currentMonth >= 10)) {
                     new Snowflakes()
                 }
 
