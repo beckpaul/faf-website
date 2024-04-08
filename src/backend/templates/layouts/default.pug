@@ -293,15 +293,7 @@ html(lang='en')
                             a(href=forumUrl) FORUMS
 
             script(src=webpackAssetJS('navigation'))
-            script(
-                src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js',
-                crossorigin='anonymous'
-            )
-            script(type='text/javascript').
-                const currentMonth = new Date().getMonth() + 1
-                if (typeof Snowflakes !== 'undefined' && (currentMonth <= 2 || currentMonth >= 10)) {
-                    new Snowflakes()
-                }
+            script(src=webpackAssetJS('snowflakes'))
 
             //- Include template-specific javascript files by extending the js block
             block js
