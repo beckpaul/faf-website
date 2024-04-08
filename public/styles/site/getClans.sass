@@ -29,8 +29,21 @@
         grid-template-columns: repeat(3, 1fr)
         li
           font-size: 10px
-    
+
+.spinner
+  border: 6px solid rgba(0, 0, 0, 0.0)
+  border-left-color: #ffa300
+  border-radius: 50%
+  width: 220px
+  height: 220px
+  animation: spin 1s linear infinite
+  margin: 20px auto
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
 
 #iAmMember
   display: none
-  

@@ -5,6 +5,7 @@ import 'simple-datatables/dist/style.css'
 axios
     .get('/data/clans.json')
     .then((response) => {
+        document.querySelector('.spinner').remove()
         const dataTable = new DataTable('#clan-table', {
             perPageSelect: null,
             data: {
@@ -29,6 +30,7 @@ axios
         })
     })
     .catch((error) => {
+        document.querySelector('.spinner').remove()
         const header = document.querySelector('h1')
         const errorElement = document.createElement('h2')
         errorElement.textContent =
